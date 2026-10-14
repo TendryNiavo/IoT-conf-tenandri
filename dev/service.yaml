@@ -5,6 +5,6 @@ metadata:
 spec:
   ports:
       - port: 8888
-        protocol: tcp
+        protocol: TCP
   selector:
     app: will-playground
