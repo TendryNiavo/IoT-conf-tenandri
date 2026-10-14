@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: my-service
 spec:
-  ports:
-      - port: 3200
-        targetPort: 8888
-        protocol: TCP
   selector:
     app: will-playground
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8888
+      protocol: TCP
