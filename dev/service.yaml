@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: my-service
 spec:
-  type: NodePort
-  ports:
-    - targetPort: 80
-      port: 80
-      nodePort: 30008
   selector:
-    app: will-playground
+    app: wil-playground
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 9376
