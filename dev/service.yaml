@@ -4,7 +4,8 @@ metadata:
   name: my-service
 spec:
   ports:
-      - port: 8888
+      - port: 3200
+        targetPort: 8888
         protocol: TCP
   selector:
     app: will-playground
